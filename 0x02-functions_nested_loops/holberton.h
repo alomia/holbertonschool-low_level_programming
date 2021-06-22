@@ -13,4 +13,7 @@ void print_alphabet(void);
 /*function to print alphabet x10*/
 void print_alphabet_x10(void);
 
+/*function lowercase character*/
+int _islower(int c);
+
 #endif
