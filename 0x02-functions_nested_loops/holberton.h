@@ -16,4 +16,7 @@ void print_alphabet_x10(void);
 /*function lowercase character*/
 int _islower(int c);
 
+/*function lowercase or uppercase*/
+int _isalpha(int c);
+
 #endif
