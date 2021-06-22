@@ -19,4 +19,7 @@ int _islower(int c);
 /*function lowercase or uppercase*/
 int _isalpha(int c);
 
+/**/
+int print_sign(int n);
+
 #endif
