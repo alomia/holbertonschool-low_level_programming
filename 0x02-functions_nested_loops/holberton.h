@@ -19,7 +19,10 @@ int _islower(int c);
 /*function lowercase or uppercase*/
 int _isalpha(int c);
 
-/**/
+/*print the sign of a number*/
 int print_sign(int n);
+
+/*returns the absolute value of a number*/
+int _abs(int);
 
 #endif
