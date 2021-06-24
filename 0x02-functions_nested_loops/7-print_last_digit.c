@@ -12,7 +12,12 @@ int result;
 
 result = n % 10;
 
+if (n < 0)
+{
 result = result * -1;
+}
 
 return (result);
 }
+
+
