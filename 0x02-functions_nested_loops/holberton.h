@@ -31,5 +31,10 @@ int print_last_digit(int n);
 /*prints every minute of the day*/
 void jack_bauer(void);
 
+/**/
+void times_table(void);
+
+/**/
+int add(int, int);
 
 #endif
