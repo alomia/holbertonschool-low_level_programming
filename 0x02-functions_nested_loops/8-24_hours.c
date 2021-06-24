@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * jack_bauer - prints every minute of the day
+ *
+ * @void: integer to be evaluated.
+ * Return: none
+ */
 void jack_bauer(void)
 {
 int h, m;
