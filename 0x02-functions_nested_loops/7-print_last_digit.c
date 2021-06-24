@@ -16,7 +16,7 @@ if (n < 0)
 {
 result = result * -1;
 }
-_putchar(result);
+_putchar(result + '0');
 return (result);
 }
 
