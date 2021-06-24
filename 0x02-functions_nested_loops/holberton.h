@@ -22,7 +22,10 @@ int _isalpha(int c);
 /*print the sign of a number*/
 int print_sign(int n);
 
-/*returns the absolute value of a number*/
+/*return the absolute value of a number*/
 int _abs(int);
+
+/*return the  last digit*/
+int print_last_digit(int n);
 
 #endif
