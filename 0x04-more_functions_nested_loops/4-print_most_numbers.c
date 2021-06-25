@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_most_numbers - prints on the screen the numbers from 1 to 9 | - 2 and 4
+ * print_most_numbers - prints on the screen the numbers from 1 to 9 - 2 and 4
  *
  * return: void
  */
