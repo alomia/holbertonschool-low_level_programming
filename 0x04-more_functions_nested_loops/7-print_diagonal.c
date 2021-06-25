@@ -14,13 +14,16 @@ if (n >= 1)
 
 for (i = 1; i <= n ; i++)
 {
- 
+
 
 for (j = 0 ; j < i ; j++)
 {
-if (j > 0){
+
+if (j > 0)
+{
 _putchar(' ');
 }
+
 }
 _putchar(92);
 _putchar('\n');
