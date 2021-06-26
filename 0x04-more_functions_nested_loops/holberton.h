@@ -28,4 +28,7 @@ void print_line(int n);
 /*function that draws a diagonal line on the terminal*/
 void print_diagonal(int n);
 
+/*function that prints a square, followed by a new line*/
+void print_square(int size);
+
 #endif
