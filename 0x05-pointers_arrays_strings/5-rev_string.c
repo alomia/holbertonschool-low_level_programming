@@ -20,7 +20,6 @@ while (s[i])
 {
 
 str[i] = s[i];
-
 i++;
 
 }
@@ -33,6 +32,7 @@ while (i >= 0)
 s[i] = str[j];
 j++;
 i--;
+
 }
 
 }
