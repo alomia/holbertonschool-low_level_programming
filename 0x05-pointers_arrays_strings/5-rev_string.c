@@ -30,7 +30,7 @@ i = i - 1;
 while (i >= 0)
 {
 
-s[i] = str[i];
+s[i] = str[j];
 j++;
 i--;
 }
