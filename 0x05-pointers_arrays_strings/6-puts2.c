@@ -12,10 +12,10 @@ int i;
 
 i = 0;
 
-while (*(str + 1))
+while (*(str + i))
 {
 
-_putchar(str[i]);
+_putchar(*(str + i));
 
 i = i + 2;
 
