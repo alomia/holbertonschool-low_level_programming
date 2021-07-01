@@ -13,6 +13,7 @@ int j;
 
 i = 0;
 j = 0;
+
 while (str[i] != 0)
 {
 
@@ -20,15 +21,9 @@ i++;
 
 }
 
-while (i > 0)
+for (; j <= i ; j = j + 2)
 {
-
-if (i == j)
-break;
-
 _putchar(str[j]);
-j = j + 2;
-
 }
 
 _putchar('\n');
