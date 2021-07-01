@@ -19,8 +19,9 @@ while (str[i] != 0)
 i++;
 }
 
-while(j != i)
+while (j != i)
 {
+
 _putchar(str[j]);
 j = j + 2;
 }
