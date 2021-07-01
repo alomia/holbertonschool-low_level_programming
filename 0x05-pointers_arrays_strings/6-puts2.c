@@ -12,11 +12,16 @@ int i;
 
 i = 0;
 
-while (str[i] != '\0')
+while (str[i])
 {
 
 _putchar(str[i]);
 i = i + 2;
+
+if (str[i] == '.')
+{
+break;
+}
 
 }
 
