@@ -21,7 +21,8 @@ i++;
 
 while (j != i)
 {
-if (j == i)
+
+if (j >= i)
 break;
 
 _putchar(str[j]);
