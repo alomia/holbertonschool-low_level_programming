@@ -33,7 +33,7 @@ _putchar(str[j]);
 
 else
 {
-j = (i -1) /2;
+j = (i + 1) / 2;
 for (; j < i ; j++)
 _putchar(str[j]);
 }
