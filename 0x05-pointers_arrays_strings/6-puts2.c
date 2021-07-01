@@ -18,11 +18,6 @@ while (str[i])
 _putchar(str[i]);
 i = i + 2;
 
-if (str[i] == '.')
-{
-break;
-}
-
 }
 
 _putchar('\n');
