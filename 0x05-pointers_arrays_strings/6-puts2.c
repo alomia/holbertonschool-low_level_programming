@@ -19,10 +19,9 @@ while (str[i] != 0)
 i++;
 }
 
-while (i > 0)
+for (j = 0 ; j >= i ; j = j + 2)
 {
 _putchar(str[j]);
-j = j + 2;
 }
 
 _putchar('\n');
