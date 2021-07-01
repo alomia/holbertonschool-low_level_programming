@@ -9,14 +9,26 @@ void puts2(char *str)
 {
 
 int i;
+int j;
 
 i = 0;
-
-while (str[i])
+j = 0;
+while (str[i] != 0)
 {
 
-_putchar(str[i]);
-i = i + 2;
+i++;
+
+}
+
+while (i > 0)
+{
+_putchar(str[j]);
+j++;
+
+if (i == j)
+{
+break;
+}
 
 }
 
