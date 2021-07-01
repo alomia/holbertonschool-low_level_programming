@@ -22,13 +22,12 @@ i++;
 
 while (i > 0)
 {
-_putchar(str[j]);
-j = j + 2;
 
 if (i == j)
-{
 break;
-}
+
+_putchar(str[j]);
+j = j + 2;
 
 }
 
