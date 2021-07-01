@@ -36,4 +36,5 @@ k = (i - 1) / 2;
 _putchar(str[k]);
 }
 
+_putchar('\n');
 }
