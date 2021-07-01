@@ -24,7 +24,7 @@ if (i % 2 == 0)
 
 j = i / 2;
 
-for (; j <= i; j++)
+for (; j < i; j++)
 {
 _putchar(str[j]);
 }
@@ -34,7 +34,7 @@ _putchar(str[j]);
 else
 {
 j = (i -1) /2;
-for (; j <= i ; j++)
+for (; j < i ; j++)
 _putchar(str[j]);
 }
 
