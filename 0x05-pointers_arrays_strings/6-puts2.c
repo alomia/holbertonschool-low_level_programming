@@ -23,7 +23,7 @@ i++;
 while (i > 0)
 {
 _putchar(str[j]);
-j++;
+j = j + 2;
 
 if (i == j)
 {
