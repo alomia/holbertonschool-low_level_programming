@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <stdio_ext.h>
 
+/*function that prints a character*/
+int _putchar(char c);
+
 /*function that concatenates two strings*/
 char *_strcat(char *dest, char *src);
 
@@ -27,5 +30,11 @@ char *cap_string(char *str);
 
 /*function that encodes a string into 1337*/
 char *leet(char *);
+
+/*function that encodes a string using rot13*/
+char *rot13(char *);
+
+/* function that prints an integer*/
+void print_number(int n);
 
 #endif
