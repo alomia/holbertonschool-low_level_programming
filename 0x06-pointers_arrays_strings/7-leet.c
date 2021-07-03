@@ -5,12 +5,12 @@
  *
  * Return: str
  */
+char *leet(char *str)
+{
+
 int lower_letter[5] = {97, 101, 111, 116, 108};
 int upper_letter[] = {65, 69, 79, 84, 76};
 int numbers[] = {52, 51, 48, 55, 49};
-
-char *leet(char *str)
-{
 
 int count;
 int i;
