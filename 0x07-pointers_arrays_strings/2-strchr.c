@@ -14,9 +14,21 @@ int i;
 
 i = 1;
 
-while (s[i] != c)
-i++;
+while (s[i])
+{
+
+if (s[i] == c)
+{
 
 return (&s[i]);
+break;
+
+}
+
+i++;
+
+}
+
+return (0);
 
 }
