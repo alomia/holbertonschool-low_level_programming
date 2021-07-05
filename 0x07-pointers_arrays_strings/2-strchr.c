@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stddef.h>
 /**
  * _strchr - function that locates a character in a string
  * @s: pointer
@@ -21,7 +20,7 @@ while (s[i] != 0)
 if (s[i] == c)
 {
 
-return (s + i);
+return (&s[i]);
 break;
 
 }
