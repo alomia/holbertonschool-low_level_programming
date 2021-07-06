@@ -29,7 +29,7 @@ if (accept[j] == s[i])
 {
 
 result += 1;
-
+break;
 }
 
 j++;
