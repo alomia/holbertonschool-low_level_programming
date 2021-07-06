@@ -6,28 +6,20 @@
  *
  * Return: s[i]
  */
-
 char *_strchr(char *s, char c)
 {
 
-int i;
+do {
 
-i = 0;
+if (*s == c)
 
-while (s[i] != 0)
 {
-
-if (s[i] == c)
-{
-
-return (&s[i]);
-break;
+return ((char *) s);
+}
 
 }
 
-i++;
-
-}
+while (*s++);
 
 return (0);
 
