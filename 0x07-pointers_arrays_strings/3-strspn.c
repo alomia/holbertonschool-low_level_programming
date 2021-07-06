@@ -10,21 +10,27 @@
 unsigned int _strspn(char *s, char *accept)
 {
 
-int result;
+unsigned int i;
+unsigned int j;
 
-char *ptr;
-
-for (result = 0 ; *s ; s++, result++)
+for (i = 0; s[i]; i++)
 {
 
-for (ptr = accept ; *ptr && *ptr != *s ; ptr++)
-;
+for (j = 0; accept[j]; j++)
+{
 
-if (!*ptr)
+if (s[i] == accept[j])
+
 break;
 
 }
 
-return (result);
+if (!accept[j])
+
+break;
+
+}
+
+return (i);
 
 }
