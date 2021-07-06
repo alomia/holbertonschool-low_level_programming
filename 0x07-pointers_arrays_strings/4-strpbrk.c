@@ -9,30 +9,16 @@
 char *_strpbrk(char *s, char *accept)
 {
 
-char *stringChars = 0;
-if (s == 0 || accept == 0)
+int i;
+
+while (*s)
 {
 
-return (0);
-
-}
-
-while (*s != 0)
+for (i = 0; accept[i]; i++)
 {
 
-stringChars = accept;
-
-while (*stringChars != 0)
-{
-
-if (*s == *stringChars)
-{
-
-return ((char *)s);
-
-}
-
-stringChars++;
+if (*s == accept[i])
+return (s);
 
 }
 
@@ -40,6 +26,6 @@ s++;
 
 }
 
-return (s);
+return (0);
 
 }
