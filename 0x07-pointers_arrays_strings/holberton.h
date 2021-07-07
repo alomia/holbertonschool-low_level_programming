@@ -1,8 +1,6 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
-int compare(const char *X, const char *Y);
-
 /*function that fills memory with a constant byte*/
 char *_memset(char *s, char b, unsigned int n);
 
