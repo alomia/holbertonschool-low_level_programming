@@ -1,45 +1,36 @@
 #include "holberton.h"
 /**
  * _strstr -  function that locates a substring
- *  @haystack: pointer
- *  @needle: pointer
- *
+ * @haystack: pointer
+ * @needle: pointer
  *
  * Return: returns a pointer to the first occurrence in haystack
  */
-int compare(const char *X, const char *Y)
-{
-
-while (*X && *Y)
-{
-if (*X != *Y)
-{
-return (0);
-}
-
-X++;
-Y++;
-
-}
-
-return (*Y == '\0');
-
-}
-
 char *_strstr(char *haystack, char *needle)
 {
 
-while (*haystack != '\0')
+while (*haystack)
 {
 
-if ((*haystack == *needle) && compare(haystack, needle))
+char *Begin = haystack;
+char *pattern = needle;
+
+while (*haystack && *needle && *haystack == *pattern)
 {
 
-return (haystack);
+haystack++;
+pattern++;
 
 }
 
-haystack++;
+if (!*pattern)
+{
+
+return (Begin);
+
+}
+
+haystack = Begin + 1;
 
 }
 
