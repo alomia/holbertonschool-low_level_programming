@@ -1,6 +1,9 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
+/*screen printing function*/
+int _putchar(char c);
+
 /*function that fills memory with a constant byte*/
 char *_memset(char *s, char b, unsigned int n);
 
@@ -19,5 +22,8 @@ char *_strpbrk(char *s, char *accept);
 
 /*function that locates a substring*/
 char *_strstr(char *haystack, char *needle);
+
+/*function that prints the chessboard*/
+void print_chessboard(char (*a)[8]);
 
 #endif
