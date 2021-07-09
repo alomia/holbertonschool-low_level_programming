@@ -24,4 +24,10 @@ int _sqrt_recursion(int n);
 /*function to obtain the square root*/
 int _sqrt_root(int n, int r);
 
+/*returns 1 if prime 0 if not prime*/
+int is_prime_number(int n);
+
+/**/
+int prime(int n, int a);
+
 #endif
