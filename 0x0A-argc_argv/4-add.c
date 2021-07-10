@@ -28,7 +28,6 @@ if (*argv[count] >= 'a')
 
 printf("Error\n");
 countLetter++;
-return (0);
 break;
 }
 
