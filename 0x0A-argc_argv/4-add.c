@@ -18,7 +18,7 @@ resultSum = 0;
 for (count = 1 ; count < argc ; count++)
 {
 
-if (atoi(argv[count]))
+if (*argv[count] >= 'a')
 {
 
 printf("Error\n");
