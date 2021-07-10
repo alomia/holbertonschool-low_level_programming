@@ -11,30 +11,23 @@
 int main(int argc, char *argv[])
 {
 int count;
-int countLetter;
 int resultSum;
 
 resultSum = 0;
-countLetter = 0;
-
-if (argc < 3)
-printf("0\n");
 
 for (count = 1 ; count < argc ; count++)
 {
 
-if (*argv[count] >= 'a')
+if (!atoi(argv[count]))
 {
 
 printf("Error\n");
-countLetter++;
-break;
+return (1);
 }
 
 resultSum += atoi(argv[count]);
 }
 
-if (countLetter == 0 && argc > 1)
 printf("%d\n", resultSum);
 
 return (0);
