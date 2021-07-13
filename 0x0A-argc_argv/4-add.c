@@ -10,25 +10,31 @@
  */
 int main(int argc, char *argv[])
 {
-int count;
-int resultSum;
 
-resultSum = 0;
+int number;
+int digit; 
+int sum = 0;
 
-for (count = 1 ; count < argc ; count++)
+
+for (number = 1; number < argc; number++)
 {
 
-if (*argv[count] >= 'a')
+for (digit = 0; argv[number][digit]; digit++)
+{
+
+if (argv[number][digit] < '0' || argv[number][digit] > '9')
 {
 
 printf("Error\n");
 return (1);
 }
 
-resultSum += atoi(argv[count]);
 }
 
-printf("%d\n", resultSum);
+sum += atoi(argv[number]);
+}
+
+printf("%d\n", sum);
 
 return (0);
 }
