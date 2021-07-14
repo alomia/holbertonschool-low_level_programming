@@ -16,7 +16,7 @@ char *ptrArray;
 
 count = 0;
 
-ptrArray = malloc(sizeof(char));
+ptrArray = malloc(sizeof(str));
 
 while (str[count] != 0)
 {
