@@ -16,6 +16,12 @@ int len;
 
 len = 0;
 
+if (s1 == NULL)
+s1 = "";
+
+else if (s2 == NULL)
+s2 = "";
+
 len = strlen(s1) + strlen(s2);
 
 ptr_str = malloc((len + 1) * sizeof(char));
