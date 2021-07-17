@@ -10,43 +10,49 @@
  *
  * Return: ptrS1
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
 char *ptrS1;
 char *ptrS2;
-char  s3[10];
 
 int i;
 int len1;
 int len2;
+int lenSUM;
+
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 
 len1 = strlen(s1);
 len2 = strlen(s2);
+lenSUM = len1 + len2;
+
+
 
 ptrS1 = malloc((len1 + 1) * sizeof(char));
 
-if (ptrS1 == NULL)
-return (NULL);
-
 strcpy(ptrS1, s1);
 
-if (n >= len2){
+ptrS2 = realloc(ptrS1, lenSUM * sizeof(char));
 
-for (i = 0; i < len2; i++)
+if (n >= len2)
 {
-s3[i] = s2[i];
+
+strcat(ptrS2, s2);
 }
-}
+
 else
 {
-  
-for (i = 0; i < n ; i++)
-s3[i] = s2[i];
-}
-  
-strcat(ptrS1, s3);
+char arr[n];
 
-return (ptrS1);
+for (i = 0; i < n ; i++)
+arr[i] = s2[i];
+
+strcat(ptrS2, arr);
+}
+
+return (ptrS2);
 }
