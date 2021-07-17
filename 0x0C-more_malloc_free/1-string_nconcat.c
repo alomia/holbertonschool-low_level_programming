@@ -30,27 +30,23 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 lenSUM = len1 + len2;
 
-
-
 ptrS1 = malloc((len1 + 1) * sizeof(char));
-
 strcpy(ptrS1, s1);
 
-ptrS2 = realloc(ptrS1, lenSUM * sizeof(char));
+ptrS2 = realloc(ptrS1, lenSUM *sizeof(char));
 
 if (n >= len2)
 {
-
 strcat(ptrS2, s2);
 }
 
 else
 {
+
 char arr[n];
-
 for (i = 0; i < n ; i++)
-arr[i] = s2[i];
 
+arr[i] = s2[i];
 strcat(ptrS2, arr);
 }
 
