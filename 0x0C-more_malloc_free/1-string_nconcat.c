@@ -15,11 +15,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 char *ptr;
 
-int i;
-int j;
-int lenS1;
-int lenS2;
-int size;
+unsigned int i;
+unsigned int j;
+unsigned int lenS1;
+unsigned int lenS2;
+unsigned int size;
 
 
 if (s1 == NULL)
