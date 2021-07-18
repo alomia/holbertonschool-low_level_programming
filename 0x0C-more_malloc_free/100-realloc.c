@@ -26,7 +26,7 @@ return (NULL);
 
 free(ptr);
 
-ptr2 = realloc(ptr, new_size * old_size);
+ptr = realloc(ptr, new_size * old_size);
 
 return (ptr);
 }
