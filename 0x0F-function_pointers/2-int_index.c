@@ -13,8 +13,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 unsigned int i;
 int result;
 
-if (array == NULL && size <= 0 && cmp == NULL)
-return (-1);
+if (array && size && cmp)
+{
 
 for (i = 0 ; i < size ; i++)
 {
@@ -22,6 +22,8 @@ for (i = 0 ; i < size ; i++)
 result = cmp(array[i]);
 if (result)
 return (i);
+}
+
 }
 
 return (-1);
