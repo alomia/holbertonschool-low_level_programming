@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include "stdarg.h"
 /**
  * sum_them_all - return sum
  * @n: variable
@@ -20,6 +19,8 @@ sum = 0;
 
 for (i = 0; i < n ; i++)
 sum += va_arg(ap, int);
+
+va_end(ap);
 
 return (sum);
 }
