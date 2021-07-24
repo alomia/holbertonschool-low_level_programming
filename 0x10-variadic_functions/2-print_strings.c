@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_strings - function that prints strings, followed by a new line
- * separator: pointer
- * n: variable
+ * @separator: pointer
+ * @n: variable
  *
  * Return: void
  */
@@ -36,5 +36,5 @@ printf("%s", separator);
 
 putchar('\n');
 
-va_end (string);
+va_end(string);
 }
