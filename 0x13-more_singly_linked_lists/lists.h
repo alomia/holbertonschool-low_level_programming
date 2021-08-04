@@ -22,4 +22,7 @@ struct listint_s *next;
 /*function that prints all the elements of a listint_t list*/
 size_t print_listint(const listint_t *h);
 
+/*function that returns the number of elements in a linked listint_t list*/
+size_t listint_len(const listint_t *h);
+
 #endif
