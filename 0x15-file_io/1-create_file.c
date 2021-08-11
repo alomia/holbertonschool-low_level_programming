@@ -1,4 +1,6 @@
 #include "main.h"
+#include <cstddef>
+#include <fcntl.h>
 #include <sys/types.h>
 #include <unistd.h>
 /**
@@ -19,19 +21,18 @@ nr = 0;
 if (filename == NULL)
 return (-1);
 
-fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 
 if (fd == -1)
 return (-1);
 
 if (text_content ==  NULL)
-{
+text_content = "";
 
-while (text_content != NULL)
+while (text_content[nr] != '\0')
 nr++;
-}
 
-write(fd, text_content, nr);
+write(STDERR_FILENO, text_content, nr);
 
 close(fd);
 
