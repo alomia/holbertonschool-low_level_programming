@@ -6,6 +6,9 @@
  *
  * Return: exit.
  */
+
+void copy(const char *file_from, const char *file_to);
+
 int main(int argc, char **argv)
 {
 
