@@ -32,7 +32,7 @@ text_content = "";
 while (text_content[nr] != '\0')
 nr++;
 
-write(STDERR_FILENO, text_content, nr);
+write(fd, text_content, nr);
 
 close(fd);
 
