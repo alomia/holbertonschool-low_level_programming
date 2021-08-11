@@ -1,8 +1,4 @@
 #include "main.h"
-#include <cstddef>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <unistd.h>
 /**
  * create_file - function that creates a file
  * @filename: pointer
