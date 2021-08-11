@@ -26,11 +26,15 @@ fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 if (fd == -1)
 return (-1);
 
-if (text_content ==  NULL)
-text_content = "";
+if (text_content == NULL)
+return (1);
+
+if (text_content !=  NULL)
+{
 
 while (text_content[nr] != '\0')
 nr++;
+}
 
 write(fd, text_content, nr);
 
