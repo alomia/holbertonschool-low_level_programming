@@ -13,15 +13,15 @@ unsigned long int idx;
 hash_node_t *node;
 
 if (ht == NULL || key == NULL || strlen(key) == 0)
-        return (NULL);
+return (NULL);
 
 idx = key_index((unsigned char *) key, ht->size);
 
 if (ht->array[idx] == NULL || ht->array[idx] == 0)
-        return (NULL);
+return (NULL);
 
 if (strcmp(ht->array[idx]->key, key) == 0)
-        return (ht->array[idx]->value);
+return (ht->array[idx]->value);
 
 node = ht->array[idx];
 
@@ -29,7 +29,8 @@ while (node != NULL)
 {
 
 if (strcmp(node->key, key) == 0)
-        return (node->value);
+return (node->value);
+
 node = node->next;
 }
 
